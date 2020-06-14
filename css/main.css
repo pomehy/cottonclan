@@ -1,0 +1,82 @@
+@font-face {
+    font-family: 'Rodchenko';
+    src: url("../fonts/Rodchenko.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap; 
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0)
+}
+
+.page-header {    
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-image: linear-gradient(#63544B, #74665D);
+    
+    
+}
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
+}
+
+.logo {   
+
+    font-size: 35px;
+    font-family: 'Rodchenko';
+    color: #ffffff;
+    letter-spacing: 1px;
+    text-decoration: none;   
+    text-transform: uppercase;
+
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+             0px 8px 13px rgba(0,0,0,0.1),
+             0px 18px 23px rgba(0,0,0,0.1);
+}
+.logo span {
+    color: #D71609;
+}
+.main-nav__list {
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 63%;
+    padding: 0;
+    margin: 0;
+
+    list-style: none;
+}
+
+.main-nav__link {
+    display: inline-block;
+    padding: 10px 20px;
+
+    font-size: 24px;
+    font-family: 'Rodchenko';
+    letter-spacing: 1px;    
+    color: #ffffff;
+    text-decoration: none;   
+
+    background-image: linear-gradient(#63544B, #74665D);
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+    0px 8px 13px rgba(0,0,0,0.1),
+    0px 18px 23px rgba(0,0,0,0.1);
+}
+
+.main-nav__link:hover {
+    background-image: linear-gradient(#63544B, #988b83);  
+}
+.main-nav__link:active {    
+    box-shadow: inset 1px 2px 2px 0px #221C1E; 
+    text-shadow: 2px 2px 1px #363636;
+}
+

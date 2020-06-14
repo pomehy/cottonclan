@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/health.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="page-header">
+        <div class="container">
+            <nav class="main-nav">
+                <a class="logo main-nav__logo" href="#">Cotton<span>Clan</span></a>
+                <!-- <ul class="main-nav__list">
+                    <li class="main-nav__item">
+                        <a class="main-nav__link" href="#">Главная</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a class="main-nav__link" href="#">Расчёты</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a class="main-nav__link" href="#">Полезное</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a class="main-nav__link" href="#">Статьи</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a class="main-nav__link" href="#">Контакты</a>
+                    </li>
+                </ul> -->
+            </nav>
+        </div>
+    </header>
+    <main class="page-main">
+        <section class="health container">
+            <h2 class="health__title">Расчет здоровья</h2>
+            <form class="health__form" action="">
+                <p class="health__level level">
+                    <label class="level__label" for="level">Уровень</label>
+                    <input class="level__input" type="number" name="level" id="level" value="1" max="80" min="1" required>
+                    <span class="level__alert alert-hidden">Укажите положительное число</span>
+                </p>
+                <p class="health__stamina stamina">
+                    <label class="stamina__label" for="stamina">Выносливость</label>
+                    <input class="stamina__input" type="number" name="level" id="stamina" value="10" min="10" required>
+                    <span class="stamina__alert alert-hidden">Укажите положительное число больше 10</span>
+                </p>  
+                <p class="health__text ">
+                    <label class="health__label">Здоровье</label>
+                    <span class="health__result">0</span>
+                </p>
+                <button class="health__button">Посчитать</button>
+            </form>
+        </section>
+        <!-- <section class="damage container">
+            <h2 class="damage__title">РАСЧЁТ УРОНА ПЕРСОНАЖА</h2>
+            <form class="damage__form" action="">
+                <p class="">
+                    <label for="">Выбор оружия</label>
+                    <select name="weapon" id="weapon">
+                        <optgroup label="Легкое оружие">
+                            <option value="LO-Scorp">Scorpion EVO 3</option>
+                            <option value="LO-МР7">МР7 А1</option>
+                            <option value="LO-PP1901">ПП-19-01 «Витязь»</option>
+                        </optgroup>
+                        <optgroup label="Среднее оружие">
+                            <option value="SO-AK400">АК-400</option>
+                            <option value="SO-Beretta">Beretta ARX160</option>
+                            <option value="SO-Alfa">AK Alfa</option>
+                        </optgroup>  
+                        <optgroup label="Тяжелое оружие">
+                            <option value="TO-Minigun">М134 Minigun</option>
+                            <option value="TO-Barrett">Barrett XM109</option>
+                            <option value="TO-Balkan">АГС-40 «Балкан»</option>
+                        </optgroup>                         
+                    </select>                
+                </p>
+                <fieldset>
+                    <legend>Выбрать артефакт (кулон)</legend>
+                    <label>
+                        <input type="radio" name="culon" value="fag" checked>                        
+                        Клык вичухи 
+                    </label>
+                    <label>
+                        <input type="radio" name="culon" value="clock">                        
+                        Часы Хантера 
+                    </label>
+                    <label>
+                        <input type="radio" name="culon" value="drop">                        
+                        Капля
+                    </label>
+                    <label>
+                        <input type="radio" name="culon" value="other">                        
+                        Другое
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>Выбрать Модуль</legend>  
+                    <input type="radio" name="modul" value="clock">                   
+                    <select name="modul" id="knife">                        
+                        <optgroup label="Штык-нож">                            
+                            <option value="Knife-1">Кустарный штык-нож</option>
+                            <option value="Knife-2">Штык-нож М9</option>
+                            <option value="Knife-3">Штык-нож Тип 81</option>
+                        </optgroup>                                            
+                    </select>          
+                    <label>
+                        <input type="radio" name="modul" value="clock"> <img src="/img/modules/knife/knife-1.jpg" alt="">                        
+                        Часы Хантера 
+                    </label>
+                    <label>
+                        <input type="radio" name="modul" value="drop">                        
+                        Капля
+                    </label>
+                    <label>
+                        <input type="radio" name="modul" value="other">                        
+                        Другое
+                    </label>
+                </fieldset>
+                <p class="damage__weapon weapon">                   
+                    <label class="level__label" for="level">Уровень</label>
+                    <input class="level__input" type="number" name="level" id="level" value="1" max="80" min="1" required>
+                    <span class="level__alert alert-hidden">Укажите положительное число</span>
+                </p>
+                <p class="health__stamina stamina">
+                    <label class="stamina__label" for="stamina">Выносливость</label>
+                    <input class="stamina__input" type="number" name="level" id="stamina" value="10" min="10" required>
+                    <span class="stamina__alert alert-hidden">Укажите положительное число больше 10</span>
+                </p>  
+                <p class="health__text ">
+                    <label class="health__label">Здоровье</label>
+                    <span class="health__result">0</span>
+                </p>
+                <button class="health__button">Посчитать</button>
+            </form>
+        </section> -->
+
+    </main>
+    <footer class="page-footer">
+
+    </footer>
+    <script src="js/health.js"></script>
+</body>
+</html>
