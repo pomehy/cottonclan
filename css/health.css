@@ -1,0 +1,114 @@
+.health {
+    width: 100%;
+    padding-top: 10px;
+}
+.health__title {    
+    
+
+}
+
+.health-form-wrapper {    
+    padding-bottom: 30px;
+    padding-right: 30px;
+    padding-left: 30px;
+    
+    border: 3px solid #222222;
+    border-radius: 5px;
+
+    
+}
+
+/* level */
+
+.health__level {
+    margin-top: 10px;
+}
+
+.level__label {
+    display: block;     
+
+    font-family: 'Rodchenko';
+    font-size: 20px;
+}
+
+.level__input {
+    width: 100%;
+    padding: 5px 10px;
+
+    font-family: 'Rodchenko';
+    font-size: 20px;  
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px dashed rgba(34, 28, 30, 0.39);
+    background: transparent;
+}
+.level__alert {
+    font-size: 13px;
+    color: #D71609;
+}
+.alert-hidden {
+    visibility: hidden;
+}
+
+/* stamina */
+
+.health__stamina {
+    margin-top: 10px;
+}
+.stamina__label {
+    display: block; 
+
+    font-family: 'Rodchenko';
+    font-size: 20px;
+}
+.stamina__input {
+    width: 100%;
+    padding: 5px 10px;
+
+    font-size: 20px;  
+    font-family: 'Rodchenko';
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px dashed rgba(34, 28, 30, 0.39);
+    background: transparent;
+    background: transparent;
+}
+.stamina__alert {
+    font-size: 13px;
+    color: #D71609;
+}
+
+/* button */
+
+.health__button {
+    width: 100%;
+    padding: 10px 20px;
+    border: 2px dashed rgb(8, 112, 8);
+    background: transparent;
+    font-family: 'Rodchenko';
+    letter-spacing: 1px;
+    background-color: rgb(8, 112, 8);
+    color: #ffffff;
+}
+/* result */
+.health__text {    
+    font-family: 'Rodchenko';
+    font-size: 20px;    
+    
+    letter-spacing: 1px;
+}
+.health__text--warning {
+    color: #D71609;
+}
+.health__text--success {
+    color: rgb(8, 112, 8);
+}
+.health__result {      
+    display: inline-block;
+    padding: 5px 10px ;
+    width: 100%;
+    border: 2px dashed rgba(34, 28, 30, 0.39);
+    background: transparent;
+}

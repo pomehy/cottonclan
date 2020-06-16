@@ -7,35 +7,109 @@
     <link rel="stylesheet" href="css/bootstrap-grid.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/health.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
-<body>
+<body class="page">
+    <div class="wrapper container">
+        <div class="vertical-bg">           
+        </div>
+    </div>
     <header class="page-header">
-        <div class="container">
-            <nav class="main-nav">
-                <a class="logo main-nav__logo" href="#">Cotton<span>Clan</span></a>
-                <!-- <ul class="main-nav__list">
-                    <li class="main-nav__item">
-                        <a class="main-nav__link" href="#">Главная</a>
-                    </li>
-                    <li class="main-nav__item">
-                        <a class="main-nav__link" href="#">Расчёты</a>
-                    </li>
-                    <li class="main-nav__item">
-                        <a class="main-nav__link" href="#">Полезное</a>
-                    </li>
-                    <li class="main-nav__item">
-                        <a class="main-nav__link" href="#">Статьи</a>
-                    </li>
-                    <li class="main-nav__item">
-                        <a class="main-nav__link" href="#">Контакты</a>
-                    </li>
-                </ul> -->
-            </nav>
+        <div class="container">            
+            <a class="logo" href="#">Cotton<span>Clan</span></a>               
         </div>
     </header>
-    <main class="page-main">
-        <section class="health container">
+    
+    <main class="page-main container"> 
+                <nav class="main-nav">
+                    <ul class="main-nav__list">
+                        <li class="main-nav__item">
+                            <a href="#" class="main-nav__link">Персонаж</a>
+                        </li>
+                        <li class="main-nav__item submenu">
+                            <a href="#" class="main-nav__link">Меткость</a>
+                            <!-- <ul class="submenu__list">
+                                <li class="submenu__item">
+                                    <a class="submenu__link"href="">Уровень</a>
+                                </li>
+                                <li class="submenu__item">
+                                    <a class="submenu__link"href="">Меткость</a>
+                                </li>
+                                <li class="submenu__item">
+                                    <a class="submenu__link"href="">Выносливость</a>
+                                </li>
+                                <li class="submenu__item">
+                                    <a class="submenu__link"href="">Ярость</a>
+                                </li>
+                                <li class="submenu__item">
+                                    <a class="submenu__link"href="">Владение оружием</a>
+                                </li>
+                            </ul> -->
+                        </li>
+                        <li class="main-nav__item">
+                            <a href="#" class="main-nav__link">Выносливость</a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a href="#" class="main-nav__link">Ярость</a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a href="#" class="main-nav__link">Владение</a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a href="#" class="main-nav__link">Пули</a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a href="#" class="main-nav__link">Жетоны</a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a href="#" class="main-nav__link">Питомец</a>
+                        </li>                        
+                    </ul>
+                </nav>                
+                <section class="main-content health">
+                    <h2 class="section-title health__title ">Выносливость</h2>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, earum debitis eveniet exercitationem voluptatum velit quasi esse nemo maiores vel atque asperiores eos repellendus necessitatibus ut. Ipsa maxime optio molestiae!</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea odit laboriosam dolores nobis debitis laudantium rerum voluptatum dolorem architecto unde?</p>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="health-form-wrapper">
+                                <h3 class="">Расчёт здоровья</h3>
+                                <form class="health__form" action="">
+                                    <p class="health__level level">
+                                        <label class="level__label" for="level">Уровень</label>
+                                        <input class="level__input" type="number" name="level" id="level" value="1" max="80" min="1" required>
+                                        <span class="level__alert alert-hidden">Укажите положительное число</span>
+                                    </p>
+                                    <p class="health__stamina stamina">
+                                        <label class="stamina__label" for="stamina">Выносливость</label>
+                                        <input class="stamina__input" type="number" name="stamina" id="stamina" value="10" min="10" required>
+                                        <span class="stamina__alert alert-hidden">Укажите положительное число больше 10</span>
+                                    </p>  
+                                    <p class="health__text ">
+                                        <label class="health__label">Здоровье</label>
+                                        <span class="health__result">0</span>
+                                    </p>
+                                    <button class="health__button">Посчитать</button>
+                                </form>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="biohazard"></div>
+                </section>
+            
+            
+        
+            
+           
+       
+        
+        <!-- <section class="health">
             <h2 class="health__title">Расчет здоровья</h2>
             <form class="health__form" action="">
                 <p class="health__level level">
@@ -45,7 +119,7 @@
                 </p>
                 <p class="health__stamina stamina">
                     <label class="stamina__label" for="stamina">Выносливость</label>
-                    <input class="stamina__input" type="number" name="level" id="stamina" value="10" min="10" required>
+                    <input class="stamina__input" type="number" name="stamina" id="stamina" value="10" min="10" required>
                     <span class="stamina__alert alert-hidden">Укажите положительное число больше 10</span>
                 </p>  
                 <p class="health__text ">
@@ -54,7 +128,7 @@
                 </p>
                 <button class="health__button">Посчитать</button>
             </form>
-        </section>
+        </section> -->
         <!-- <section class="damage container">
             <h2 class="damage__title">РАСЧЁТ УРОНА ПЕРСОНАЖА</h2>
             <form class="damage__form" action="">
@@ -137,11 +211,32 @@
                 <button class="health__button">Посчитать</button>
             </form>
         </section> -->
+        <!-- <section class="fury container">
+            <h2 class="fury__title">Ярость х2</h2>
+            <form class="fury__form" action="">
+                <p class="fury__input-wrapper">
+                    <label class="fury__label" for="fury-level">Уровень</label>
+                    <input class="fury__level" type="number" name="fury-level" id="level" value="1" max="80" min="1" required>
+                    <span class="level__alert alert-hidden">Укажите положительное число</span>
+                </p>
+                <p class="fury__input-wrapper">
+                    <label class="fury__label" for="fury-percent">Шанс х2 урона %</label>
+                    <input class="fury__percent" type="number" name="fury-percent" id="fury-percent" value="50" min="50" max="70" required>
+                    <span class="stamina__alert alert-hidden">Укажите положительное число больше 10</span>
+                </p>  
+                <p class="fury__input-wrapper">
+                    <span class="fury__label">Ярость</span> 
+                    <span class="fury__result">20</span>
+                </p>
+                <button class="fury__button">Посчитать</button>
+            </form>
 
+        </section> -->
     </main>
     <footer class="page-footer">
 
     </footer>
     <script src="js/health.js"></script>
+    <script src="js/fury.js"></script>
 </body>
 </html>
