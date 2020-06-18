@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/fury.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body class="page">
+    <div class="wrapper container">
+        <div class="vertical-bg">           
+        </div>
+    </div>
+    <header class="page-header">
+        <div class="container">            
+            <a class="logo" href="/index.html">Cotton<span>Clan</span></a>               
+        </div>
+    </header>
+    <main class="page-main container">
+        <nav class="main-nav">
+            <ul class="main-nav__list">
+                <li class="main-nav__item">
+                    <a href="/character.html" class="main-nav__link">Персонаж</a>
+                </li>
+                <li class="main-nav__item submenu">
+                    <a href="/accuracy.html" class="main-nav__link">Меткость</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="/health.html" class="main-nav__link">Выносливость</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="/fury.html" class="main-nav__link active">Ярость</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="/weapon.html" class="main-nav__link">Владение</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="/bullets.html" class="main-nav__link">Пули</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="/gold.html" class="main-nav__link">Жетоны</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="/dogs.html" class="main-nav__link">Питомец</a>
+                </li>
+            </ul>
+        </nav>
+        <section class="main-content health">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2 class="section-title">Ярость</h2>
+                    <p>Ярость — это характеристика, от которой зависит, как часто вы будете наносить в бою двойной урон.</p>
+                    <p>Шанс двойного урона не может быть больше 70%.</p>
+                    <p>Ярость можно быстро усилить за счёт бонуса от экипировки.</p>
+                    
+                    <p class="main-content__text">С каждым новым уровнем шанс двойного урона снижается на 1%.</p>
+                </div>
+                <div class="col-lg-6">
+                    <div class="form-wrapper">
+                        <h3 class="main-content__subtitle fury__subtitle">Расчёт ярости</h3>
+                        <form class="form health__form" action="">
+                            <p class="form-input-wrapper fury-level">
+                                <label class="form__label fury-level__label" for="fury-level">Уровень персонажа</label>
+                                <input class="form__input fury-level__input" type="number" name="fury-level" id="fury-level"
+                                    value="1" max="80" min="1" required>   
+                            </p>
+                            <p class="form-input-wrapper fury-chance">
+                                <label class="form__label" for="fury-chance">Желаемый шанс х2 урона</label>
+                                <input class="form__input fury-chance__input" type="number" name="fury-chance"
+                                    id="fury-chance" value="50" min="50" required>   
+                            </p>                            
+                            <p class="form-input-wrapper">
+                                <label class="form__label">Количество ярости</label>
+                                <span class="fury__result">20</span>
+                            </p>
+                        </form>
+                        <p class="fury__important">С каждым новым уровнем шанс двойного урона снижается на 1% !</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="page-footer">
+
+    </footer>  
+    <script src="js/fury.js"></script>  
+</body>
+</html>
