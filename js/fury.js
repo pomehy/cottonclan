@@ -1,17 +1,24 @@
-let furyLevel = document.querySelector('.fury__level');
-let furyPercent = document.querySelector('.fury__percent');
+let furyLevel = document.querySelector('.fury-level__input');
+let furyChance = document.querySelector('.fury-chance__input');
 let furyResult = document.querySelector('.fury__result');
-let furyButton = document.querySelector('.fury__button');
 
-furyButton.onclick = function(evt) {
-    evt.preventDefault();     
 
-     furyResult.textContent = (parseInt(furyLevel.value,10) *(parseInt(furyPercent.value,10) - parseInt(30,10)));
-};
 
-furyLevel.oninput = function() {
-    furyResult.textContent = (parseInt(furyLevel.value,10) *(parseInt(furyPercent.value,10) - parseInt(30,10)));
-};
-furyPercent.oninput = function() {
-    furyResult.textContent = (parseInt(furyLevel.value,10) *(parseInt(furyPercent.value,10) - parseInt(30,10)));
-};
+furyLevel.oninput = function() { 
+    if (furyLevel.value < 1 ) {
+        furyLevel.value = 1;
+    } else if  (furyLevel.value > 80 ) {
+        furyLevel.value = 80;
+    } else  {
+        furyResult.textContent =  (parseInt(furyLevel.value,10) * (parseInt(furyChance.value,10) - parseInt(30,10))); 
+    }
+}
+
+furyChance.oninput = function() {     
+    if  (furyChance.value > 70 ) {
+        furyChance.value = 70;
+    } else if (furyChance.value > 50) {
+        furyResult.textContent =  (parseInt(furyLevel.value,10) * (parseInt(furyChance.value,10) - parseInt(30,10))); 
+    }
+
+}
