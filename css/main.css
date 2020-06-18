@@ -6,10 +6,12 @@
     font-display: swap; 
 }
 
+
 .page {    
     background-image: url(../img/bg-body.jpg);    
     background-size: cover;
     background-repeat: no-repeat;
+    font-family: 'Montserrat', sans-serif;
 }
 .vertical-bg-wrapper {
     position: relative;
@@ -41,6 +43,15 @@
     overflow: hidden;
     border: 0;
     clip: rect(0 0 0 0)
+}
+.section-title {
+    
+    font-size: 26px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    
+    color: #222222;   
+    font-family: 'Rodchenko';
 }
 
 .page-header {   
@@ -82,76 +93,13 @@
 /* .logo span {
     color: #D71609;
 } */
-.main-nav {
-    padding-top: 25px;
-          
-    min-width: 320px; 
-    min-height: 80vh;
-    text-align: right;  
-    background-image: url(../img/bg-vertical-2.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
 
-    border-top: 2px solid #c5bdbd;
-    border-left: 2px solid #c5bdbd;
-    border-right: 1px solid #c5bdbd;
-    border-bottom: 2px solid #c5bdbd;
-    border-top-left-radius: 1px;
-
-    box-sizing: border-box;
-
-    
-    
-}
-
-.main-nav__list {  
-    padding-left: 3px;   
-    margin: 0;
-    list-style: none;
-
-    box-sizing: border-box;
-}
-
-.main-nav__link {   
-    display: block; 
-    padding: 15px 35px;
-
-    font-size: 20px;
-    font-family: 'Rodchenko';
-    color: #ffffff;
-    letter-spacing: 1px;
-    text-decoration: none;   
-    text-transform: uppercase;    
-    text-shadow: 0px 0px 5px rgb(87, 10, 4);
-}
-
-.main-nav__link:hover {
-    background-image: linear-gradient(45deg,  rgba(215, 23, 9, 0.137), #D71609);
-    color: #ffffff;
-    box-shadow: 0 0px 5px rgb(133, 9, 0);
-}
-
-.submenu__list {
-    margin: 0;    
-    list-style: none;
-    padding: 0;
-}
-.submenu__link {
-    display: block;
-    padding-top: 3px;
-    padding-bottom: 3px;
-    padding-right: 35px;
-
-    font-size: 18px;
-    font-family: 'Rodchenko';
-    text-decoration: none;
-    color: #ffffffad;
-    
-}
 .main-content {
     position: relative;
-    padding: 25px;    
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 25px;
+    padding-bottom: 25px;    
     background-image: url(../img/bg-cont-2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -180,8 +128,162 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
-.section-title {
-    letter-spacing: 1px;
-    color: #222222;   
+
+.main-nav {
+    position: relative;
+    padding-top: 25px;
+          
+    min-width: 320px; 
+    min-height: 80vh;
+    height: auto;
+    text-align: right;  
+    background-image: url(../img/bg-vertical-2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    border-top: 2px solid #c5bdbd;
+    border-left: 2px solid #c5bdbd;
+    border-right: 1px solid #c5bdbd;
+    border-bottom: 2px solid #c5bdbd;
+    border-top-left-radius: 1px;
+
+    box-sizing: border-box; 
+}
+
+.main-nav::before {
+    position: absolute;
+    width: 100px;   
+    
+    content: '';
+    width: 200px;
+    bottom: 40px;
+    height: 100px;
+    left: 50px;
+    transform: rotate(5deg);
+    
+    background-image: url(../img/topsecret.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    
+}
+
+.main-nav__list {  
+    padding-left: 3px;   
+    margin: 0;
+    list-style: none;
+
+    box-sizing: border-box;
+}
+
+.main-nav__link {   
+    display: block; 
+    padding: 15px 35px;
+
+    font-size: 20px;
     font-family: 'Rodchenko';
+    color: #ffffff;
+    letter-spacing: 1px;
+    text-decoration: none;   
+    text-transform: uppercase;    
+    text-shadow: 0px 0px 5px rgb(87, 10, 4);  
+
+}
+
+.main-nav__link:hover {
+    background-image: linear-gradient(45deg,  rgba(215, 23, 9, 0.137), #D71609);
+    color: #ffffff;
+    box-shadow: 0 0px 5px rgb(133, 9, 0);
+}
+
+.main-nav__link.active {
+    background-image: linear-gradient(45deg,  rgba(215, 23, 9, 0.137), #D71609);
+    color: #ffffff;
+    box-shadow: 0 0px 5px rgb(133, 9, 0);
+}
+
+.form-wrapper {    
+    position: relative;
+    z-index: 5;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 30px;
+    padding-left: 30px;  
+
+    background-color: rgba(0, 0, 0, 0.6);    
+    border-radius: 5px;
+
+    box-shadow: 0 1px 5px 3px rgba(0, 0, 0, 0.3);
+}
+.form-input-wrapper  {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.form__label {
+    display: block;  
+    margin-bottom: 3px;   
+
+    font-family: 'Rodchenko';
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    
+    color: #ffffffcc;
+    text-shadow: 1px 1px 1px #000000;
+}
+
+.form__input {
+    display: block;
+    width: 100%;      
+    
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 10px;
+    padding-right: 15px;
+
+    font-size: 22px;  
+    font-family: 'Rodchenko';
+      
+    background-color: rgba(255, 255, 255, 0.7);
+    border: 1px dashed rgba(0, 0, 0, 0.5);
+
+    color: #CC4E42;    
+
+    text-shadow: 1px 1px 1px #000000;  
+}
+
+.main-content__subtitle{
+    margin-top: 10px;
+
+    font-family: 'Rodchenko';
+    font-size: 24px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    
+    text-shadow: 2px 2px 2px #222222;
+}
+.main-content__text {     
+    position: relative;
+    color: #222222;
+    font-size: 16px;
+    line-height: 120%;
+    font-weight: 600;
+}
+.main-content__text::before {
+    position: absolute;
+    content: '';
+    
+    width: 80%;
+    height: 15px;
+    bottom: -25px;
+    background-image: url(../img/redline.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 0.3s;
+    transform: scale(1);
 }
