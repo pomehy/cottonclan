@@ -1,48 +1,10 @@
-.health {
-    width: 100%;
-    padding-top: 10px;
-}
-.health__title {    
-    
-
-}
-
-.health-form-wrapper {    
-    padding-bottom: 30px;
-    padding-right: 30px;
-    padding-left: 30px;
-    
-    border: 3px solid #222222;
-    border-radius: 5px;
-
-    
+.health__subtitle {
+    color: #0dd36d;
 }
 
 /* level */
 
-.health__level {
-    margin-top: 10px;
-}
 
-.level__label {
-    display: block;     
-
-    font-family: 'Rodchenko';
-    font-size: 20px;
-}
-
-.level__input {
-    width: 100%;
-    padding: 5px 10px;
-
-    font-family: 'Rodchenko';
-    font-size: 20px;  
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    border-bottom: 2px dashed rgba(34, 28, 30, 0.39);
-    background: transparent;
-}
 .level__alert {
     font-size: 13px;
     color: #D71609;
@@ -53,62 +15,63 @@
 
 /* stamina */
 
-.health__stamina {
-    margin-top: 10px;
-}
-.stamina__label {
-    display: block; 
 
-    font-family: 'Rodchenko';
-    font-size: 20px;
-}
-.stamina__input {
-    width: 100%;
-    padding: 5px 10px;
 
-    font-size: 20px;  
-    font-family: 'Rodchenko';
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    border-bottom: 2px dashed rgba(34, 28, 30, 0.39);
-    background: transparent;
-    background: transparent;
-}
 .stamina__alert {
     font-size: 13px;
     color: #D71609;
 }
 
-/* button */
-
-.health__button {
-    width: 100%;
-    padding: 10px 20px;
-    border: 2px dashed rgb(8, 112, 8);
-    background: transparent;
-    font-family: 'Rodchenko';
-    letter-spacing: 1px;
-    background-color: rgb(8, 112, 8);
-    color: #ffffff;
+.bonus {
+    margin-top: 10px;
+    margin-bottom: 25px;
 }
+.bonus__label {
+    color: #ffffffcc;
+}
+.bonus__alert {
+    font-size: 13px;
+    color: #D71609;
+}
+
 /* result */
-.health__text {    
+
+.health__result-wrapper {    
+    margin: 0;
     font-family: 'Rodchenko';
     font-size: 20px;    
     
     letter-spacing: 1px;
 }
-.health__text--warning {
-    color: #D71609;
+
+.health__result { 
+    display: block;     
+    width: 100%;    
+    
+    padding: 10px 10px;
+
+    font-size: 22px;  
+    font-family: 'Rodchenko';
+      
+    background-color: #CC4E42;
+    color: rgba(255, 255, 255, 0.9);
+    border: 1px dashed rgba(0, 0, 0, 0.5);
+    text-shadow: 1px 1px 1px #000000;
+    
 }
-.health__text--success {
-    color: rgb(8, 112, 8);
-}
-.health__result {      
-    display: inline-block;
-    padding: 5px 10px ;
-    width: 100%;
-    border: 2px dashed rgba(34, 28, 30, 0.39);
-    background: transparent;
+
+.healt__important {  
+    margin-top: 25px; 
+    margin-bottom: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 7px;
+    padding-right: 7px;
+
+    text-align: center; 
+    color: #ffffff;
+    font-size: 14px;    
+    
+    box-shadow: 0 0 5px 1px #0dd36d; 
+    border-radius: 5px; 
 }
