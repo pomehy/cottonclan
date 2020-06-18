@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/health.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body class="page">
@@ -48,7 +49,7 @@
                             </ul> -->
                         </li>
                         <li class="main-nav__item">
-                            <a href="#" class="main-nav__link">Выносливость</a>
+                            <a href="#" class="main-nav__link active">Выносливость</a>
                         </li>
                         <li class="main-nav__item">
                             <a href="#" class="main-nav__link">Ярость</a>
@@ -67,40 +68,58 @@
                         </li>                        
                     </ul>
                 </nav>                
-                <section class="main-content health">
-                    <h2 class="section-title health__title ">Выносливость</h2>
-                    <div class="row">
+                <section class="main-content health">                    
+                    <div class="row">                        
                         <div class="col-lg-6">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, earum debitis eveniet exercitationem voluptatum velit quasi esse nemo maiores vel atque asperiores eos repellendus necessitatibus ut. Ipsa maxime optio molestiae!</p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea odit laboriosam dolores nobis debitis laudantium rerum voluptatum dolorem architecto unde?</p>
+                            <h2 class="section-title health__title">Выносливость</h2>
+                            <p>Выносливость влияет на количество здоровья вашего персонажа. Чем больше выносливости , тем больше здоровья.</p>
+                            <p>На количество здоровья влияет уровень персонажа.</p>
+                            <p>Здоровье можно увеличить за счёт "энергетиков"(байкалы, конфеты, сухари и т.д.)  - максимальный бонус + 50%</p>
+                            <p>Большой запас здоровья эффективно иметь против мутантов в Данжах и Рейдах на боссов.</p>  
+                            <p>В клановой войне количество здоровья необхоидмо сводить к минимуму, так противник не сможет "настрелять" много очков урона в КВ !</p>
+                            <p class="health__text">Усиливать персонажа эффективнее за счёт увеличения других характеристик (меткость, владение оружием, ярость) !</p>                                                            
+                            
                         </div>
                         <div class="col-lg-6">
                             <div class="health-form-wrapper">
-                                <h3 class="">Расчёт здоровья</h3>
+                                <h3 class="health__subtitle">Расчёт здоровья</h3>
                                 <form class="health__form" action="">
                                     <p class="health__level level">
-                                        <label class="level__label" for="level">Уровень</label>
-                                        <input class="level__input" type="number" name="level" id="level" value="1" max="80" min="1" required>
+                                        <label class="health__label level__label" for="healt-level">Уровень персонажа</label>
+                                        <input class="health__input level__input" type="number" name="healt-level" id="level" value="1" max="80" min="1" required>
                                         <span class="level__alert alert-hidden">Укажите положительное число</span>
                                     </p>
                                     <p class="health__stamina stamina">
-                                        <label class="stamina__label" for="stamina">Выносливость</label>
-                                        <input class="stamina__input" type="number" name="stamina" id="stamina" value="10" min="10" required>
-                                        <span class="stamina__alert alert-hidden">Укажите положительное число больше 10</span>
-                                    </p>  
-                                    <p class="health__text ">
-                                        <label class="health__label">Здоровье</label>
-                                        <span class="health__result">0</span>
+                                        <label class="health__label stamina__label" for="healt-stamina">Выносливость</label>
+                                        <input class="health__input stamina__input" type="number" name="healt-stamina" id="healt-stamina" value="10" min="10" required>
+                                        <span class="stamina__alert alert-hidden">Укажите число больше 10</span>
                                     </p>
-                                    <button class="health__button">Посчитать</button>
+                                    <p class="health__bonus bonus">
+                                        <input class="bonus__input" type="checkbox" name="health-bonus" id="health-bonus" > 
+                                        <label class="bonus__label" for="health-bonus"> Бонус от "Байкалов" +50%"</label>
+                                        
+                                        <!-- <input class="health__input bonus__input" type="number" name="health-bonus" id="health-bonus" value="0" min="0" max="50" required> -->
+                                        <!-- <span class="bonus__alert alert-hidden">Укажите число  10</span> -->
+                                    </p> 
+                                    
+                                    <p class="health__result-wrapper ">
+                                        <label class="health__label">Здоровье персонажа</label>
+                                        <span class="health__result">80</span>
+                                    </p>
+                                   
+                                    <!-- <button class="health__button">Посчитать</button> -->
                                 </form>
+                                <p class="healt__important">Чем меньше здоровья у вашего персонажа, тем он ценнее для клана в котором вы играете!</p>
+                            <!-- <p class="text-important"></p> -->
+                                
                             </div>
+                            
                             
                         </div>
                     </div>
                     
                     
-                    <div class="biohazard"></div>
+                   
                 </section>
             
             
@@ -237,6 +256,6 @@
 
     </footer>
     <script src="js/health.js"></script>
-    <script src="js/fury.js"></script>
+    <!-- <script src="js/fury.js"></script> -->
 </body>
 </html>
