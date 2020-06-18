@@ -18,244 +18,87 @@
     </div>
     <header class="page-header">
         <div class="container">            
-            <a class="logo" href="#">Cotton<span>Clan</span></a>               
+            <a class="logo" href="/index.html">Cotton<span>Clan</span></a>               
         </div>
     </header>
-    
-    <main class="page-main container"> 
-                <nav class="main-nav">
-                    <ul class="main-nav__list">
-                        <li class="main-nav__item">
-                            <a href="#" class="main-nav__link">Персонаж</a>
-                        </li>
-                        <li class="main-nav__item submenu">
-                            <a href="#" class="main-nav__link">Меткость</a>
-                            <!-- <ul class="submenu__list">
-                                <li class="submenu__item">
-                                    <a class="submenu__link"href="">Уровень</a>
-                                </li>
-                                <li class="submenu__item">
-                                    <a class="submenu__link"href="">Меткость</a>
-                                </li>
-                                <li class="submenu__item">
-                                    <a class="submenu__link"href="">Выносливость</a>
-                                </li>
-                                <li class="submenu__item">
-                                    <a class="submenu__link"href="">Ярость</a>
-                                </li>
-                                <li class="submenu__item">
-                                    <a class="submenu__link"href="">Владение оружием</a>
-                                </li>
-                            </ul> -->
-                        </li>
-                        <li class="main-nav__item">
-                            <a href="#" class="main-nav__link active">Выносливость</a>
-                        </li>
-                        <li class="main-nav__item">
-                            <a href="#" class="main-nav__link">Ярость</a>
-                        </li>
-                        <li class="main-nav__item">
-                            <a href="#" class="main-nav__link">Владение</a>
-                        </li>
-                        <li class="main-nav__item">
-                            <a href="#" class="main-nav__link">Пули</a>
-                        </li>
-                        <li class="main-nav__item">
-                            <a href="#" class="main-nav__link">Жетоны</a>
-                        </li>
-                        <li class="main-nav__item">
-                            <a href="#" class="main-nav__link">Питомец</a>
-                        </li>                        
-                    </ul>
-                </nav>                
-                <section class="main-content health">                    
-                    <div class="row">                        
-                        <div class="col-lg-6">
-                            <h2 class="section-title health__title">Выносливость</h2>
-                            <p>Выносливость влияет на количество здоровья вашего персонажа. Чем больше выносливости , тем больше здоровья.</p>
-                            <p>На количество здоровья влияет уровень персонажа.</p>
-                            <p>Здоровье можно увеличить за счёт "энергетиков"(байкалы, конфеты, сухари и т.д.)  - максимальный бонус + 50%</p>
-                            <p>Большой запас здоровья эффективно иметь против мутантов в Данжах и Рейдах на боссов.</p>  
-                            <p>В клановой войне количество здоровья необхоидмо сводить к минимуму, так противник не сможет "настрелять" много очков урона в КВ !</p>
-                            <p class="health__text">Усиливать персонажа эффективнее за счёт увеличения других характеристик (меткость, владение оружием, ярость) !</p>                                                            
-                            
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="health-form-wrapper">
-                                <h3 class="health__subtitle">Расчёт здоровья</h3>
-                                <form class="health__form" action="">
-                                    <p class="health__level level">
-                                        <label class="health__label level__label" for="healt-level">Уровень персонажа</label>
-                                        <input class="health__input level__input" type="number" name="healt-level" id="level" value="1" max="80" min="1" required>
-                                        <span class="level__alert alert-hidden">Укажите положительное число</span>
-                                    </p>
-                                    <p class="health__stamina stamina">
-                                        <label class="health__label stamina__label" for="healt-stamina">Выносливость</label>
-                                        <input class="health__input stamina__input" type="number" name="healt-stamina" id="healt-stamina" value="10" min="10" required>
-                                        <span class="stamina__alert alert-hidden">Укажите число больше 10</span>
-                                    </p>
-                                    <p class="health__bonus bonus">
-                                        <input class="bonus__input" type="checkbox" name="health-bonus" id="health-bonus" > 
-                                        <label class="bonus__label" for="health-bonus"> Бонус от "Байкалов" +50%"</label>
-                                        
-                                        <!-- <input class="health__input bonus__input" type="number" name="health-bonus" id="health-bonus" value="0" min="0" max="50" required> -->
-                                        <!-- <span class="bonus__alert alert-hidden">Укажите число  10</span> -->
-                                    </p> 
-                                    
-                                    <p class="health__result-wrapper ">
-                                        <label class="health__label">Здоровье персонажа</label>
-                                        <span class="health__result">80</span>
-                                    </p>
-                                   
-                                    <!-- <button class="health__button">Посчитать</button> -->
-                                </form>
-                                <p class="healt__important">Чем меньше здоровья у вашего персонажа, тем он ценнее для клана в котором вы играете!</p>
-                            <!-- <p class="text-important"></p> -->
-                                
-                            </div>
-                            
-                            
-                        </div>
+    <main class="page-main container">
+        <nav class="main-nav">
+            <ul class="main-nav__list">
+                <li class="main-nav__item">
+                    <a href="/character.html" class="main-nav__link">Персонаж</a>
+                </li>
+                <li class="main-nav__item submenu">
+                    <a href="/accuracy.html" class="main-nav__link">Меткость</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="/health.html" class="main-nav__link">Выносливость</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="/fury.html" class="main-nav__link">Ярость</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="/weapon.html" class="main-nav__link">Владение</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="/bullets.html" class="main-nav__link">Пули</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="/gold.html" class="main-nav__link">Жетоны</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="/dogs.html" class="main-nav__link">Питомец</a>
+                </li>
+            </ul>
+        </nav>
+        <section class="main-content health">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2 class="section-title">Выносливость</h2>
+                    <p>Выносливость влияет на количество здоровья вашего персонажа. Чем больше выносливости , тем больше
+                        здоровья.</p>
+                    <p>На количество здоровья влияет уровень персонажа.</p>
+                    <p>Здоровье можно увеличить за счёт "энергетиков"(байкалы, конфеты, сухари и т.д.) - максимальный
+                        бонус + 50%</p>
+                    <p>Большой запас здоровья эффективно иметь против мутантов в Данжах и Рейдах на боссов.</p>
+                    <p>В клановой войне количество здоровья необхоидмо сводить к минимуму, так противник не сможет
+                        "настрелять" много очков урона в КВ !</p>
+                    <p class="main-content__text">Усиливать персонажа эффективнее за счёт увеличения других
+                        характеристик (меткость, владение оружием, ярость) !</p>
+                </div>
+                <div class="col-lg-6">
+                    <div class="form-wrapper">
+                        <h3 class="main-content__subtitle">Расчёт здоровья</h3>
+                        <form class="form health__form" action="">
+                            <p class="form-input-wrapper level">
+                                <label class="form__label level__label" for="healt-level">Уровень персонажа</label>
+                                <input class="form__input health__input level__input" type="number" name="healt-level" id="level"
+                                    value="1" max="80" min="1" required>
+                                <span class="level__alert alert-hidden">Укажите положительное число</span>
+                            </p>
+                            <p class="form-input-wrapper  stamina">
+                                <label class="form__label" for="healt-stamina">Выносливость</label>
+                                <input class="form__input stamina__input" type="number" name="healt-stamina"
+                                    id="healt-stamina" value="10" min="10" required>
+                                <span class="stamina__alert alert-hidden">Укажите число больше 10</span>
+                            </p>
+                            <p class="health__bonus bonus">
+                                <input class="bonus__input" type="checkbox" name="health-bonus" id="health-bonus">
+                                <label class="bonus__label" for="health-bonus"> Бонус от "Байкалов" +50%"</label>
+                            </p>
+                            <p class="form-input-wrapper">
+                                <label class="form__label">Здоровье персонажа</label>
+                                <span class="health__result">80</span>
+                            </p>
+                        </form>
+                        <p class="healt__important">Чем меньше здоровья у вашего персонажа, тем он ценнее для клана в
+                            котором вы играете!</p>
                     </div>
-                    
-                    
-                   
-                </section>
-            
-            
-        
-            
-           
-       
-        
-        <!-- <section class="health">
-            <h2 class="health__title">Расчет здоровья</h2>
-            <form class="health__form" action="">
-                <p class="health__level level">
-                    <label class="level__label" for="level">Уровень</label>
-                    <input class="level__input" type="number" name="level" id="level" value="1" max="80" min="1" required>
-                    <span class="level__alert alert-hidden">Укажите положительное число</span>
-                </p>
-                <p class="health__stamina stamina">
-                    <label class="stamina__label" for="stamina">Выносливость</label>
-                    <input class="stamina__input" type="number" name="stamina" id="stamina" value="10" min="10" required>
-                    <span class="stamina__alert alert-hidden">Укажите положительное число больше 10</span>
-                </p>  
-                <p class="health__text ">
-                    <label class="health__label">Здоровье</label>
-                    <span class="health__result">0</span>
-                </p>
-                <button class="health__button">Посчитать</button>
-            </form>
-        </section> -->
-        <!-- <section class="damage container">
-            <h2 class="damage__title">РАСЧЁТ УРОНА ПЕРСОНАЖА</h2>
-            <form class="damage__form" action="">
-                <p class="">
-                    <label for="">Выбор оружия</label>
-                    <select name="weapon" id="weapon">
-                        <optgroup label="Легкое оружие">
-                            <option value="LO-Scorp">Scorpion EVO 3</option>
-                            <option value="LO-МР7">МР7 А1</option>
-                            <option value="LO-PP1901">ПП-19-01 «Витязь»</option>
-                        </optgroup>
-                        <optgroup label="Среднее оружие">
-                            <option value="SO-AK400">АК-400</option>
-                            <option value="SO-Beretta">Beretta ARX160</option>
-                            <option value="SO-Alfa">AK Alfa</option>
-                        </optgroup>  
-                        <optgroup label="Тяжелое оружие">
-                            <option value="TO-Minigun">М134 Minigun</option>
-                            <option value="TO-Barrett">Barrett XM109</option>
-                            <option value="TO-Balkan">АГС-40 «Балкан»</option>
-                        </optgroup>                         
-                    </select>                
-                </p>
-                <fieldset>
-                    <legend>Выбрать артефакт (кулон)</legend>
-                    <label>
-                        <input type="radio" name="culon" value="fag" checked>                        
-                        Клык вичухи 
-                    </label>
-                    <label>
-                        <input type="radio" name="culon" value="clock">                        
-                        Часы Хантера 
-                    </label>
-                    <label>
-                        <input type="radio" name="culon" value="drop">                        
-                        Капля
-                    </label>
-                    <label>
-                        <input type="radio" name="culon" value="other">                        
-                        Другое
-                    </label>
-                </fieldset>
-                <fieldset>
-                    <legend>Выбрать Модуль</legend>  
-                    <input type="radio" name="modul" value="clock">                   
-                    <select name="modul" id="knife">                        
-                        <optgroup label="Штык-нож">                            
-                            <option value="Knife-1">Кустарный штык-нож</option>
-                            <option value="Knife-2">Штык-нож М9</option>
-                            <option value="Knife-3">Штык-нож Тип 81</option>
-                        </optgroup>                                            
-                    </select>          
-                    <label>
-                        <input type="radio" name="modul" value="clock"> <img src="/img/modules/knife/knife-1.jpg" alt="">                        
-                        Часы Хантера 
-                    </label>
-                    <label>
-                        <input type="radio" name="modul" value="drop">                        
-                        Капля
-                    </label>
-                    <label>
-                        <input type="radio" name="modul" value="other">                        
-                        Другое
-                    </label>
-                </fieldset>
-                <p class="damage__weapon weapon">                   
-                    <label class="level__label" for="level">Уровень</label>
-                    <input class="level__input" type="number" name="level" id="level" value="1" max="80" min="1" required>
-                    <span class="level__alert alert-hidden">Укажите положительное число</span>
-                </p>
-                <p class="health__stamina stamina">
-                    <label class="stamina__label" for="stamina">Выносливость</label>
-                    <input class="stamina__input" type="number" name="level" id="stamina" value="10" min="10" required>
-                    <span class="stamina__alert alert-hidden">Укажите положительное число больше 10</span>
-                </p>  
-                <p class="health__text ">
-                    <label class="health__label">Здоровье</label>
-                    <span class="health__result">0</span>
-                </p>
-                <button class="health__button">Посчитать</button>
-            </form>
-        </section> -->
-        <!-- <section class="fury container">
-            <h2 class="fury__title">Ярость х2</h2>
-            <form class="fury__form" action="">
-                <p class="fury__input-wrapper">
-                    <label class="fury__label" for="fury-level">Уровень</label>
-                    <input class="fury__level" type="number" name="fury-level" id="level" value="1" max="80" min="1" required>
-                    <span class="level__alert alert-hidden">Укажите положительное число</span>
-                </p>
-                <p class="fury__input-wrapper">
-                    <label class="fury__label" for="fury-percent">Шанс х2 урона %</label>
-                    <input class="fury__percent" type="number" name="fury-percent" id="fury-percent" value="50" min="50" max="70" required>
-                    <span class="stamina__alert alert-hidden">Укажите положительное число больше 10</span>
-                </p>  
-                <p class="fury__input-wrapper">
-                    <span class="fury__label">Ярость</span> 
-                    <span class="fury__result">20</span>
-                </p>
-                <button class="fury__button">Посчитать</button>
-            </form>
-
-        </section> -->
+                </div>
+            </div>
+        </section>
     </main>
     <footer class="page-footer">
 
-    </footer>
-    <script src="js/health.js"></script>
-    <!-- <script src="js/fury.js"></script> -->
+    </footer>    
 </body>
 </html>
