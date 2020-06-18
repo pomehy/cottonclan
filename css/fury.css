@@ -1,0 +1,41 @@
+.fury__subtitle {
+    color: #FFED00;
+}
+
+.fury__result { 
+    display: block;     
+    width: 100%;    
+    
+    padding: 10px 10px;
+
+    font-size: 22px;  
+    font-family: 'Rodchenko';
+      
+    background-color: #CB7E4B;
+    color: rgba(255, 255, 255, 0.9);
+    border: 1px dashed rgba(0, 0, 0, 0.5);
+    text-shadow: 1px 1px 1px #000000;
+    
+}
+.fury-level {
+    margin-bottom: 26px;
+}
+
+.fury-chance {
+    margin-bottom: 26px;
+}
+.fury__important {  
+    margin-top: 25px; 
+    margin-bottom: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 7px;
+    padding-right: 7px;
+
+    text-align: center; 
+    color: #ffffff;
+    font-size: 14px;    
+    
+    box-shadow: 0 0 5px 1px #FFED00; 
+    border-radius: 5px; 
+}
