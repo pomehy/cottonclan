@@ -82,6 +82,23 @@
     border: 1px dashed rgba(0, 0, 0, 0.5);
     text-shadow: 1px 1px 1px #000000;
 }
+.pet__food::after {
+    position: absolute; 
+    top: 14px;    
+    right: 15px;
+    width: 21px;
+    height: 15px;
+
+    
+    
+    content: '';
+
+    background-image: url(../img/pet/petfood-icon.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.6;
+}
 
 .pet__price {
     position: relative;
@@ -97,6 +114,21 @@
     color: rgba(255, 255, 255, 0.9);
     border: 1px dashed rgba(0, 0, 0, 0.5);
     text-shadow: 1px 1px 1px #000000;
+}
+.pet__price::after {
+    position: absolute; 
+    top: 7px;
+    right: 11px;
+    width: 27px;
+    height: 26px;
+    
+    content: '';
+
+    background-image: url(../img/bullets-icon.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.6;
 }
 .pet__food:disabled {
     opacity: 1;
