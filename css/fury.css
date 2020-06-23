@@ -18,7 +18,31 @@
     text-shadow: 1px 1px 1px #000000;
     
 }
-.fury__result::after {
+.fury__icon {
+    position: absolute;
+    top: 33px;    
+    right: 15px;
+    content: ' ';
+    width: 20px;
+    height: 20px; 
+    
+
+    background-image: url(../img/fury/fury-icon.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.7;
+
+    transition: 0.2s;
+}
+
+.fury__icon--boom {   
+    /* transform: rotate(720deg); */
+    transform: scaleX(-1);
+
+}
+
+/* .fury__result::after {
     position: absolute; 
     top: 12px;    
     right: 15px;
@@ -32,10 +56,8 @@
     background-size: cover;
     background-repeat: no-repeat;
     opacity: 0.7;
-
     
-    
-}
+} */
 .fury-level {
     margin-bottom: 26px;
 }
