@@ -3,6 +3,7 @@
 }
 
 .fury__result { 
+    position: relative;
     display: block;     
     width: 100%;    
     
@@ -17,13 +18,35 @@
     text-shadow: 1px 1px 1px #000000;
     
 }
+.fury__result::after {
+    position: absolute; 
+    top: 12px;    
+    right: 15px;
+    width: 20px;
+    height: 20px;
+    
+    content: '';
+
+    background-image: url(../img/fury/fury-icon.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.7;
+
+    
+    
+}
 .fury-level {
     margin-bottom: 26px;
 }
 
 .fury-chance {
+    position: relative;
     margin-bottom: 26px;
 }
+
+
+
 .fury__important {  
     margin-top: 25px; 
     margin-bottom: 0;
