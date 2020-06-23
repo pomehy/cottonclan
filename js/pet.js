@@ -6,18 +6,21 @@ let petPrice = document.querySelector('.pet__price');
  
 petSelect.onchange = function() {
     petLevel.value = 1;
-    petFood.value = 0; 
-    petPrice.value = 0;  
+    petFood.textContent = 0; 
+    petPrice.textContent = 0;  
     
 };
+
 
 
 petLevel.oninput = function() {
     if (petLevel.value < 0) {
         petLevel.value = 0;
-    } else if (petLevel.value > 35) {
-        petLevel.value = 35;
-    } else if (petSelect.value == 2) {
+    } 
+    // else if (petLevel.value > 35) {
+    //     petLevel.value === 35;
+    // } 
+    else if (petSelect.value == 2) {
 
         let petFoodK = parseInt(15,10) + parseInt(15,10) * 
         ((parseInt(petLevel.value,10) - parseInt(1,10))  - parseInt(1,10));
@@ -25,7 +28,7 @@ petLevel.oninput = function() {
         let petFoodK3 = (parseInt(15,10) + parseInt(petFoodK,10)) * 
         (parseInt(petLevel.value,10) - parseInt(1,10));
 
-        petFood.value = parseInt(petFoodK3,10) / parseInt(2,10);   
+        petFood.textContent = parseInt(petFoodK3,10) / parseInt(2,10);   
         
 
     } else if (petSelect.value == 3) {
@@ -36,7 +39,7 @@ petLevel.oninput = function() {
         let petFoodK3 = (parseInt(20,10) + parseInt(petFoodK,10)) * 
         (parseInt(petLevel.value,10) - parseInt(1,10));
 
-        petFood.value = parseInt(petFoodK3,10) / parseInt(2,10);  
+        petFood.textContent = parseInt(petFoodK3,10) / parseInt(2,10);  
         
     
     } else if (petSelect.value == 4) {
@@ -47,77 +50,77 @@ petLevel.oninput = function() {
         let petFoodK3 = (parseInt(25,10) + parseInt(petFoodK,10)) * 
         (parseInt(petLevel.value,10) - parseInt(1,10));
 
-        petFood.value = parseInt(petFoodK3,10) / parseInt(2,10);  
+        petFood.textContent = parseInt(petFoodK3,10) / parseInt(2,10);  
     } else if (petSelect.value == 1) {
         if (petLevel.value == 2) {
-            petFood.value = 5;
+            petFood.textContent = 5;
         } else if (petLevel.value == 3) {
-            petFood.value = 15;
+            petFood.textContent = 15;
         } else if (petLevel.value == 4) {
-            petFood.value = 30;
+            petFood.textContent = 30;
         } else if (petLevel.value == 5) {
-            petFood.value = 55;
+            petFood.textContent = 55;
         } else if (petLevel.value == 6) {
-            petFood.value = 105;
+            petFood.textContent = 105;
         } else if (petLevel.value == 7) {
-            petFood.value = 155;
+            petFood.textContent = 155;
         } else if (petLevel.value == 8) {
-            petFood.value = 230;
+            petFood.textContent = 230;
         } else if (petLevel.value == 9) {
-            petFood.value = 305;
+            petFood.textContent = 305;
         } else if (petLevel.value == 10) {
-            petFood.value = 405;
+            petFood.textContent = 405;
         } else if (petLevel.value == 11) {
-            petFood.value = 505;
+            petFood.textContent = 505;
         } else if (petLevel.value == 12) {
-            petFood.value = 630;
+            petFood.textContent = 630;
         } else if (petLevel.value == 13) {
-            petFood.value = 755;
+            petFood.textContent = 755;
         } else if (petLevel.value == 14) {
-            petFood.value = 880;
+            petFood.textContent = 880;
         } else if (petLevel.value == 15) {
-            petFood.value = 1030;
+            petFood.textContent = 1030;
         } else if (petLevel.value == 16) {
-            petFood.value = 1180;
+            petFood.textContent = 1180;
         } else if (petLevel.value == 17) {
-            petFood.value = 1330;
+            petFood.textContent = 1330;
         } else if (petLevel.value == 18) {
-            petFood.value = 1480;
+            petFood.textContent = 1480;
         } else if (petLevel.value == 19) {
-            petFood.value = 1630;
+            petFood.textContent = 1630;
         } else if (petLevel.value == 20) {
-            petFood.value = 1830;
+            petFood.textContent = 1830;
         } else if (petLevel.value == 21) {
-            petFood.value = 2030;
+            petFood.textContent = 2030;
         } else if (petLevel.value == 22) {
-            petFood.value = 2230;
+            petFood.textContent = 2230;
         } else if (petLevel.value == 23) {
-            petFood.value = 2430;
+            petFood.textContent = 2430;
         } else if (petLevel.value == 24) {
-            petFood.value = 2680;
+            petFood.textContent = 2680;
         } else if (petLevel.value == 25) {
-            petFood.value = 2930;
+            petFood.textContent = 2930;
         } else if (petLevel.value == 26) {
-            petFood.value = 3180;
+            petFood.textContent = 3180;
         } else if (petLevel.value == 27) {
-            petFood.value = 3450;
+            petFood.textContent = 3450;
         } else if (petLevel.value == 28) {
-            petFood.value = 3750;
+            petFood.textContent = 3750;
         } else if (petLevel.value == 29) {
-            petFood.value = 4050;
+            petFood.textContent = 4050;
         } else if (petLevel.value == 30) {
-            petFood.value = 4350;
+            petFood.textContent = 4350;
         } else if (petLevel.value == 31) {
-            petFood.value = 4650;
+            petFood.textContent = 4650;
         } else if (petLevel.value == 32) {
-            petFood.value = 5050;
+            petFood.textContent = 5050;
         } else if (petLevel.value == 33) {
-            petFood.value = 5450;
+            petFood.textContent = 5450;
         } else if (petLevel.value == 34) {
-            petFood.value = 5850;
+            petFood.textContent = 5850;
         } else if (petLevel.value == 35) {
-            petFood.value = 6250;  
+            petFood.textContent = 6250;  
         }        
     }
-    petPrice.value = petFood.value * 20;
+    petPrice.textContent = petFood.textContent * 20;
 };
