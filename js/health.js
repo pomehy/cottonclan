@@ -5,8 +5,9 @@ let staminaInput = document.querySelector('.stamina__input');
 let staminaAlert = document.querySelector('.stamina__alert');
 
 let bonusInput = document.querySelector('.bonus__input'); 
-
 let healthResult = document.querySelector('.health__result');
+
+let healthIcon = document.querySelector('.health__icon');
 
 bonusInput.onchange = function() {    
     levelInput.value = 1;
@@ -30,6 +31,7 @@ levelInput.oninput = function() {
         levelAlert.classList.add('alert-hidden');    
         healthResult.textContent = ((parseInt(staminaInput.value,10) * parseInt(4,10)) * (parseInt(levelInput.value,10) + parseInt(1,10)));   
     } 
+    healthIcon.classList.toggle('health__icon--boom')
      
 };
 
@@ -46,7 +48,8 @@ staminaInput.oninput = function() {
     else if (staminaInput.value > 9) {
         staminaAlert.classList.add('alert-hidden');    
         healthResult.textContent = ((parseInt(staminaInput.value,10) * parseInt(4,10)) * (parseInt(levelInput.value,10) + parseInt(1,10))); 
-    }      
+    }   
+    healthIcon.classList.toggle('health__icon--boom')   
 };
 
 
