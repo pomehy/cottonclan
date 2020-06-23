@@ -71,13 +71,13 @@
                         <h3 class="main-content__subtitle health__subtitle">Расчёт здоровья</h3>
                         <form class="form health__form" action="">
                             <p class="form-input-wrapper level">
-                                <label class="form__label level__label" for="healt-level">Уровень персонажа</label>
+                                <label class="form__label level__label" for="healt-level">Уровень персонажа (max 80)</label>
                                 <input class="form__input health__input level__input" type="number" name="healt-level" id="level"
                                     value="1" max="80" min="1" required>
                                 <span class="level__alert alert-hidden">Укажите положительное число</span>
                             </p>
                             <p class="form-input-wrapper  stamina">
-                                <label class="form__label" for="healt-stamina">Выносливость</label>
+                                <label class="form__label" for="healt-stamina">Выносливость (min 10)</label>
                                 <input class="form__input stamina__input" type="number" name="healt-stamina"
                                     id="healt-stamina" value="10" min="10" required>
                                 <span class="stamina__alert alert-hidden">Укажите число больше 10</span>
@@ -89,6 +89,7 @@
                             <p class="form-input-wrapper">
                                 <label class="form__label">Здоровье персонажа</label>
                                 <span class="health__result">80</span>
+                                <img class="health__icon" src="img/health/heart-icon.svg" alt="">
                             </p>
                         </form>
                         <p class="healt__important">Чем меньше здоровья у вашего персонажа, тем он ценнее для клана в
