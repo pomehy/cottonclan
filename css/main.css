@@ -56,7 +56,34 @@
     color: #000000;   
     font-family: 'Rodchenko';
 }
+.main__important {
+    margin-top: 25px; 
+    margin-bottom: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 7px;
+    padding-right: 7px;
 
+    text-align: center; 
+    color: #ffffff;
+    font-size: 14px;    
+    
+    box-shadow: 0 0 5px 1px #ffffff; 
+    border-radius: 5px;
+}
+.main__important a {
+    padding: 20px 40px;
+    font-family: 'Rodchenko';
+    font-size: 24px;
+    color: #ffffff;
+    text-decoration: none;
+}
+.main__important a:hover {
+    font-family: 'Rodchenko';
+    font-size: 24px;
+    color: #CC4E42;
+    text-decoration: none;
+}
 .page-header {   
     
     
@@ -102,8 +129,9 @@
     padding-left: 25px;
     padding-right: 25px;
     padding-top: 25px;
-    padding-bottom: 25px;    
-    height: 80vh;
+    padding-bottom: 25px;
+    min-height: 80vh;    
+    height: auto;
     
     background-image: url(../img/bg-cont-2.jpg);
     background-size: cover;
@@ -137,6 +165,7 @@
 .main-nav {
     position: relative;
     padding-top: 25px;
+    padding-bottom: 25px;
           
     min-width: 320px;
     
@@ -210,7 +239,7 @@
 
 .form-wrapper {    
     position: relative;
-    z-index: 5;
+    z-index: 5;    
     padding-top: 30px;
     padding-bottom: 30px;
     padding-right: 30px;
@@ -267,12 +296,14 @@
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 2px;
+    color: #ffffff;
     
     text-shadow: 2px 2px 2px #000000;
 }
 .main-content__text {     
     position: relative;
-   
+
+    
     color: #000000;
     font-size: 16px;
     line-height: 120%;
@@ -280,7 +311,7 @@
 }
 .main-content__text::before {
     position: absolute;
-    content: '';
+    content: '';    
     
     width: 80%;
     height: 15px;
@@ -330,3 +361,70 @@
 ::-webkit-scrollbar {
     width: 17px;
 }
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+    
+
+@media only screen and (max-width : 1199px) {
+    .main-nav {
+        min-width: 280px;
+    }
+
+}
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+       
+   .form-wrapper  {
+    margin-top: 30px;
+    }
+    
+
+}
+@media only screen and (max-width : 991px) {
+    
+
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+    
+    
+}  
+
+@media only screen and (max-width : 767px) {  
+    .page-main {
+        flex-direction: column;
+    }
+    
+}
+
+@media only screen and (max-width : 576px) {
+    
+
+   
+}
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+      
+    .vertical-bg {
+        display: none;
+    }
+    .logo {
+        width: 100%;
+        margin: 0;
+        color: #222222;
+    }
+    
+}
+
+@media only screen and (max-width : 360px) {
+    .main-nav::before  {
+        display: none;
+    }
+    .main__important a {
+        font-size: 20px;
+    }
+        
+} 
+
