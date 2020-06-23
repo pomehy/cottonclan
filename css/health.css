@@ -36,7 +36,8 @@
 
 /* result */
 
-.health__result-wrapper {    
+.health__result-wrapper { 
+    position: relative;   
     margin: 0;
     font-family: 'Rodchenko';
     font-size: 20px;    
@@ -61,7 +62,29 @@
     
 }
 
-.health__result::after {
+.health__icon {
+    position: absolute;
+    top: 33px;    
+    right: 15px;
+    content: ' ';
+    width: 20px;
+    height: 20px; 
+    
+
+    background-image: url(../img/health/heart-icon.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.7;
+
+    transition: 0.2s;
+}
+
+.health__icon--boom {
+    transform: scale(1.2);
+}
+
+/* .health__result::after {
     position: absolute; 
     top: 12px;    
     right: 15px;
@@ -78,7 +101,7 @@
 
     
     
-}
+} */
 
 .healt__important {  
     margin-top: 25px; 
