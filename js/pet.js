@@ -13,8 +13,8 @@ petSelect.onchange = function() {
 
 
 petLevel.oninput = function() {
-    if (petLevel.value < 1) {
-        petLevel.value = 1;
+    if (petLevel.value < 0) {
+        petLevel.value = 0;
     } else if (petLevel.value > 35) {
         petLevel.value = 35;
     } else if (petSelect.value == 2) {
