@@ -98,8 +98,13 @@
     border: 1px dashed rgba(0, 0, 0, 0.5);
     text-shadow: 1px 1px 1px #000000;
 }
+.pet__food:disabled {
+    opacity: 1;
+    color: rgba(255, 255, 255, 0.9);
+}
 .pet__price:disabled {
     opacity: 1;
+    color: rgba(255, 255, 255, 0.9);
 }
 
 .fury__important {
