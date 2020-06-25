@@ -1,4 +1,5 @@
-<?php require 'blocks/head.php'?>    
+<?php require 'blocks/head.php'?> 
+   
     <title>CottonClan - Главная</title>
 </head>
 <?php require 'blocks/header.php' ?>
@@ -43,6 +44,8 @@
         </div>
     </section>
 </main>
+
 <?php require 'blocks/footer.php' ?>
+
 </body>
     </html>
