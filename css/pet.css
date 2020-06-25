@@ -1,4 +1,6 @@
-
+.pet .calculate__title {
+    color: #ffffff;
+}
 
 .pet__table {    
     font-weight: 600;
@@ -10,25 +12,10 @@
 .pet__table td, th {
     padding: 3px 10px;
     border: 1px solid #222222;
-    
-    
-    
 }
 .pet__table th:not(:first-child), 
 .pet__table td:not(:first-child) {
         text-align: right;
-}
-
-/* .pet .form-wrapper {
-    position: fixed;
-    width: 22%;
-} */
-.pet__subtitle {
-    color: #ffffff;
-}
-
-.pet-form__label {
-    position: relative;
 }
 
 .pet__select {    
@@ -47,10 +34,7 @@
 
 .pet__select:hover { 
     color: #78885B; 
-
     box-shadow: inset 0 0 5px;
-    
-      
 }
 
 .pet__select option {
@@ -59,14 +43,11 @@
 }
 
 
-.pet-level__input {
+.pet__level {
     color: #78885B;
     margin-bottom: 30px;
 }
-.pet__result {
-    margin-top: 15px;
-    margin-bottom: 15px;
-}
+
 .pet__food {
     position: relative;
     display: block;     
@@ -117,7 +98,7 @@
 }
 .pet__price::after {
     position: absolute; 
-    top: 7px;
+    top: 8px;
     right: 11px;
     width: 27px;
     height: 26px;
@@ -153,4 +134,8 @@
     
     box-shadow: 0 0 5px 1px #ffffff; 
     border-radius: 5px; 
+}
+
+.pet .calculate__important {
+    box-shadow: 0 0 5px 1px #ffffff; 
 }
