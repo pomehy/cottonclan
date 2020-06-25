@@ -1,56 +1,47 @@
-let levelInput = document.querySelector('.level__input');
-let levelAlert = document.querySelector('.level__alert');
+let healthLevel = document.querySelector('.health__level');
 
-let staminaInput = document.querySelector('.stamina__input');
-let staminaAlert = document.querySelector('.stamina__alert');
+let healthStamina = document.querySelector('.health__stamina');
 
-let bonusInput = document.querySelector('.bonus__input'); 
+let healthBonus = document.querySelector('.health__bonus'); 
 let healthResult = document.querySelector('.health__result');
 
 let healthIcon = document.querySelector('.health__icon');
 
-bonusInput.onchange = function() {    
-    levelInput.value = 1;
-    staminaInput.value = 10;
-    healthResult.textContent = 80;
-}
 
-levelInput.oninput = function() {  
-    if (levelInput.value > 80) {
-        levelInput.value = 80;
-    }  
-    else if (bonusInput.checked && levelInput.value > 0) {
-        levelAlert.classList.add('alert-hidden');    
-        healthResult.textContent = ((parseInt(staminaInput.value,10) * parseInt(4,10)) * (parseInt(levelInput.value,10) + parseInt(1,10)) * 1.5); 
-    }  
-    else if (levelInput.value <= 0 || levelInput.value == '') {
-        levelAlert.classList.remove('alert-hidden');
-        healthResult.textContent = " Укажите верные данные";
-        
-    } else if (levelInput.value > 0) {
-        levelAlert.classList.add('alert-hidden');    
-        healthResult.textContent = ((parseInt(staminaInput.value,10) * parseInt(4,10)) * (parseInt(levelInput.value,10) + parseInt(1,10)));   
+healthBonus.onclick = function() {       
+    if (healthBonus.checked) {
+        healthResult.textContent = parseInt(healthResult.textContent,10) * 1.5; 
+    } else {        
+        healthResult.textContent = 80; 
+        healthLevel.value = 1;
+        healthStamina.value = 10;
+    }        
+};
+
+healthLevel.oninput = function() {  
+    if (healthLevel.value > 80) {
+        healthLevel.value = 80;
+    } else if (healthLevel.value > 0 && healthBonus.checked) {          
+        healthResult.textContent = ((parseInt(healthStamina.value,10) * parseInt(4,10)) * (parseInt(healthLevel.value,10) + parseInt(1,10)) * 1.5); 
+    
+    } else if (healthLevel.value > 0) {          
+        healthResult.textContent = ((parseInt(healthStamina.value,10) * parseInt(4,10)) * (parseInt(healthLevel.value,10) + parseInt(1,10)));   
     } 
-    healthIcon.classList.toggle('health__icon--boom')
+    healthIcon.classList.toggle('health__icon--animate')
      
 };
 
-staminaInput.oninput = function() {
-    
-    if (bonusInput.checked && staminaInput.value > 9) {  
-        staminaAlert.classList.add('alert-hidden');       
-        healthResult.textContent = ((parseInt(staminaInput.value,10) * parseInt(4,10)) * (parseInt(levelInput.value,10) + parseInt(1,10)) * 1.5); 
-    } 
-    else if (staminaInput.value < 10 || staminaInput.value == '') {        
-        staminaAlert.classList.remove('alert-hidden');
-        healthResult.textContent = " Укажите верные данные";
-    } 
-    else if (staminaInput.value > 9) {
-        staminaAlert.classList.add('alert-hidden');    
-        healthResult.textContent = ((parseInt(staminaInput.value,10) * parseInt(4,10)) * (parseInt(levelInput.value,10) + parseInt(1,10))); 
+healthStamina.oninput = function() {    
+    if (healthBonus.checked && healthStamina.value > 9) { 
+        healthResult.textContent = ((parseInt(healthStamina.value,10) * parseInt(4,10)) * (parseInt(healthLevel.value,10) + parseInt(1,10)) * 1.5); 
+    }     
+    else if (healthStamina.value > 9) {       
+        healthResult.textContent = ((parseInt(healthStamina.value,10) * parseInt(4,10)) * (parseInt(healthLevel.value,10) + parseInt(1,10))); 
     }   
-    healthIcon.classList.toggle('health__icon--boom')   
+    healthIcon.classList.toggle('health__icon--animate')   
 };
+
+
 
 
 
