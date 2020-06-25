@@ -1,5 +1,5 @@
 let petSelect = document.querySelector('.pet__select');
-let petLevel = document.querySelector('.pet-level__input');
+let petLevel = document.querySelector('.pet__level');
 
 let petFood = document.querySelector('.pet__food');
 let petPrice = document.querySelector('.pet__price');
