@@ -6,8 +6,6 @@
     font-display: swap; 
 }
 
-
-
 .page {    
     background-image: url(../img/bg-body.jpg);    
     background-size: cover;
@@ -16,13 +14,10 @@
     color: #000000;
     font-weight: 400;
 }
-.vertical-bg-wrapper {
-    position: relative;
-    z-index: 0;
-}
-.vertical-bg  {
+
+.back-bg  {
     position: absolute;
-    z-index: 1;
+    z-index: 0;
     height: 100vh;
     width: 350px;
     padding-top: 25px;
@@ -31,8 +26,7 @@
     background-image: url(../img/bg-vertical.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
-    
+    background-size: cover;    
 
     box-shadow: 0 0 5px;    
 }
@@ -47,53 +41,14 @@
     border: 0;
     clip: rect(0 0 0 0)
 }
-.section-title {
-    
-    font-size: 26px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    
-    color: #000000;   
-    font-family: 'Rodchenko';
-}
-.main__important {
-    margin-top: 25px; 
-    margin-bottom: 0;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-left: 7px;
-    padding-right: 7px;
 
-    text-align: center; 
-    color: #ffffff;
-    font-size: 14px;    
-    
-    box-shadow: 0 0 5px 1px #ffffff; 
-    border-radius: 5px;
-}
-.main__important a {
-    padding: 20px 40px;
-    font-family: 'Rodchenko';
-    font-size: 24px;
-    color: #ffffff;
-    text-decoration: none;
-}
-.main__important a:hover {
-    font-family: 'Rodchenko';
-    font-size: 24px;
-    color: #CC4E42;
-    text-decoration: none;
-}
-.page-header {   
-    
-    
-}
+
 
 .page-main {
     position: relative;
     z-index: 2; 
     display: flex;
-    
+    min-height: 80vh;    
 }
 
 .logo {  
@@ -116,51 +71,14 @@
     transition: 0.5s;
 }
 
-/* .logo:hover {
+.logo:hover {
     text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 15px, #FFF 0px 0px 25px,#D71609 0px 0px 20px, #D71609 0px 0px 50px, #D71609 0px 0px 40px;
-} */
+}
 
 /* .logo span {
     color: #D71609;
 } */
 
-.main-content {
-    position: relative;
-    padding-left: 25px;
-    padding-right: 25px;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    min-height: 80vh;    
-    height: auto;
-    
-    background-image: url(../img/bg-cont-2.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    box-shadow: inset 5px 5px 45px 10px rgba(0, 0, 0, 0.3),
-    0 0 10px 0px black;
-
-    border-top: 2px solid #c5bdbd;
-    border-right: 2px solid #c5bdbd;
-    border-bottom: 2px solid #c5bdbd;
-
-    overflow: hidden;
-}
-
-.main-content::after {
-    content: '';
-    position: absolute;
-    right: -30px;    
-    top: -80px;
-    width: 300px;
-    height: 300px;
-    
-    opacity: 0.3;
-    
-    background-image: url(../img/biohazard.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 
 .main-nav {
     position: relative;
@@ -199,8 +117,6 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-
-    
 }
 
 .main-nav__list {  
@@ -237,71 +153,53 @@
     box-shadow: 0 0px 5px rgb(133, 9, 0);
 }
 
-.form-wrapper {    
+.main-content {
     position: relative;
-    z-index: 5;    
-    padding-top: 30px;
-    padding-bottom: 30px;
-    padding-right: 30px;
-    padding-left: 30px;  
-
-    background-color: rgba(0, 0, 0, 0.6);    
-    border-radius: 5px;
-
-    box-shadow: 0 1px 5px 3px rgba(0, 0, 0, 0.3);
-}
-.form-input-wrapper  {
-    position: relative;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-.form__label {
-    display: block;  
-    margin-bottom: 3px;   
-
-    font-family: 'Rodchenko';
-    font-size: 16px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 25px;
+    padding-bottom: 25px;      
+    height: auto;
     
-    color: #ffffffcc;
-    text-shadow: 1px 1px 1px #000000;
-}
+    background-image: url(../img/bg-cont-2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: inset 5px 5px 45px 10px rgba(0, 0, 0, 0.3),
+    0 0 10px 0px black;
 
-.form__input {
-    display: block;
-    width: 100%;      
+    border-top: 2px solid #c5bdbd;
+    border-right: 2px solid #c5bdbd;
+    border-bottom: 2px solid #c5bdbd;
+
+    overflow: hidden;
+}
+.main-content__title {
     
-    padding-top: 7px;
-    padding-bottom: 7px;
-    padding-left: 10px;
-    padding-right: 15px;
-
-    font-size: 22px;  
-    font-family: 'Rodchenko';
-      
-    background-color: rgba(255, 255, 255, 0.7);
-    border: 1px dashed rgba(0, 0, 0, 0.5);
-
-    color: #CC4E42;    
-
-    text-shadow: 1px 1px 1px #000000;  
-}
-
-.main-content__subtitle{
-    margin-top: 10px;
-
-    font-family: 'Rodchenko';
-    font-size: 24px;
-    text-align: center;
-    text-transform: uppercase;
+    font-size: 26px;
     letter-spacing: 2px;
-    color: #ffffff;
+    text-transform: uppercase;
     
-    text-shadow: 2px 2px 2px #000000;
+    color: #000000;   
+    font-family: 'Rodchenko';
 }
-.main-content__text {     
+
+.main-content::after {
+    content: '';
+    position: absolute;
+    right: -30px;    
+    top: -80px;
+    width: 300px;
+    height: 300px;
+    
+    opacity: 0.3;
+    
+    background-image: url(../img/biohazard.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main-content__highlight {     
     position: relative;
 
     
@@ -310,7 +208,7 @@
     line-height: 120%;
     font-weight: 600;
 }
-.main-content__text::before {
+.main-content__highlight::before {
     position: absolute;
     content: '';    
     
@@ -323,6 +221,145 @@
     background-size: cover;
     transition: 0.3s;
     transform: scale(1);
+}
+
+/* calculate */
+
+.calculate__title {
+    margin-top: 10px;
+
+    font-family: 'Rodchenko';
+    font-size: 24px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #ffffff;
+    
+    text-shadow: 2px 2px 2px #000000;
+}
+
+.calculate-inner {    
+    position: relative;
+    z-index: 5;    
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 30px;
+    padding-left: 30px;  
+
+    background-color: rgba(0, 0, 0, 0.6);    
+    border-radius: 5px;
+
+    box-shadow: 0 1px 5px 3px rgba(0, 0, 0, 0.3);
+}
+
+.calculate-input-wrapper  {
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.calculate__label {
+    margin-bottom: 3px;   
+
+    font-family: 'Rodchenko';
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 20px;
+    text-transform: uppercase;
+    
+    color: #ffffffcc;
+    text-shadow: 1px 1px 1px #000000;
+}
+
+.calculate__input {
+    display: block;
+    width: 100%;      
+    
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 10px;
+    padding-right: 15px;    
+
+    font-size: 22px;  
+    font-family: 'Rodchenko';
+      
+    background-color: rgba(255, 255, 255, 0.7);
+    border: 1px dashed rgba(0, 0, 0, 0.5);
+
+    color: #CC4E42;    
+
+    text-shadow: 1px 1px 1px #000000;  
+}
+
+.calculate__result {
+    display: block;
+    width: 100%;      
+    
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 10px;
+    padding-right: 15px;    
+
+    font-size: 22px;  
+    font-family: 'Rodchenko';
+      
+    background-color: rgba(255, 255, 255, 0.7);
+    border: 1px dashed rgba(0, 0, 0, 0.5);
+
+    color: #CC4E42;    
+
+    text-shadow: 1px 1px 1px #000000;
+}
+
+.calculate__important {
+    margin-top: 25px; 
+    margin-bottom: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 7px;
+    padding-right: 7px;
+
+    text-align: center; 
+    color: #ffffff;
+    font-size: 14px;    
+    
+    box-shadow: 0 0 5px 1px #ffffff; 
+    border-radius: 5px;
+}
+
+.calculate__link {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+
+.page-footer {
+    position: relative;
+    z-index: 1;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.footer-content {    
+    width: 350px;
+    margin-left: 30px;    
+}
+.footer__title {
+    font-family: 'Rodchenko';
+    font-size: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #ffffff;
+}
+.footer__link {
+    display: block;
+    font-family: 'Rodchenko';
+    font-size: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1px;
+    color: #CC4E42;
 }
 
 ::-webkit-scrollbar-button {
@@ -408,7 +445,7 @@
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
       
-    .vertical-bg {
+    .back-bg {
         display: none;
     }
     .logo {
