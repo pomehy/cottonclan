@@ -13,7 +13,7 @@
             <a href="fury.php" class="main-nav__link">Ярость</a>
         </li>
         <li class="main-nav__item">
-            <a href="weapon.php" class="main-nav__link">Владение</a>
+            <a href="weapon.php" class="main-nav__link">Владение оружием</a>
         </li>
         <!-- <li class="main-nav__item">
             <a href="bullets.html" class="main-nav__link">Пули</a>
