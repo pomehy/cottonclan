@@ -44,9 +44,14 @@
 .weapon__button {
     margin-top: 25px;
     color: #ffffff;
-    background-color: #78885B; 
-    
+    background-color: #78885B;     
 }
+
+.weapon__button:hover {
+    background-image: linear-gradient(#78885B, #97a877);    
+}
+
+
 
 .damadge {
     display: flex;
@@ -61,7 +66,7 @@
 }
 
 .damadge__human {
-    /* background-color: #CC4E42; */
+    
     background-color: hsla(20, 80%, 50%, 1);
     border: 1px solid rgba(0, 0, 0, 0.6);
     color: #ffffff; 
@@ -76,7 +81,7 @@
 
 
 .damadge__mutant {
-    /* background-color: #923931; */
+    
     background-color: hsla(20, 80%, 50%, 1);
     border: 1px solid rgba(0, 0, 0, 0.6);
     color: #ffffff; 
@@ -90,7 +95,7 @@
 }
 
 .damadge__boss {
-    /* background-color: #682721; */
+    
     background-color: hsla(20, 80%, 50%, 1);
     
     border: 1px solid rgba(0, 0, 0, 0.6);
