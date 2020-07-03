@@ -1,0 +1,39 @@
+.planning .calculate__title {
+    color: #CC4E42;
+    
+}
+.planning__result {  
+    position: relative;  
+    padding: 10px 10px;
+    color: #ffffff;
+    background-color: #CC4E42;    
+}
+
+.planning__result::before {     
+    position: absolute; 
+    top: 8px;
+    right: 13px;
+    width: 27px;
+    height: 26px;
+    
+    content: '';
+
+    background-image: url(../img/bullets-icon.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.6;
+}
+
+
+.planning__button {
+    margin-top: 25px;
+    color: #ffffff;
+    background-color: #78885B;     
+}
+
+.planning__button:hover {
+    background-image: linear-gradient(#78885B, #97a877);    
+}
+
+
