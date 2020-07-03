@@ -5,19 +5,14 @@ let furyResult = document.querySelector('.fury__result');
 let furyIcon = document.querySelector('.fury__icon');
 
 
-
-furyLevel.oninput = function() { 
-    if (furyLevel.value < 1 ) {
-        furyLevel.value = 1;
-    } else if  (furyLevel.value > 80 ) {
+furyLevel.oninput = function() {  
+    if (furyLevel.value > 80) {
         furyLevel.value = 80;
-    } else  {
+    } else if (furyLevel.value > 0) {          
         furyResult.textContent =  (parseInt(furyLevel.value,10) * (parseInt(furyChance.value,10) - parseInt(30,10))); 
-        
-    }
-    furyIcon.classList.toggle('fury__icon--animate')
-    
-}
+    } 
+    furyIcon.classList.toggle('fury__icon--animate');     
+};
 
 
 furyChance.oninput = function() {     
