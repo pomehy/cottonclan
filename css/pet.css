@@ -69,8 +69,6 @@
     right: 15px;
     width: 21px;
     height: 15px;
-
-    
     
     content: '';
 
@@ -99,7 +97,7 @@
 .pet__price::after {
     position: absolute; 
     top: 8px;
-    right: 11px;
+    right: 13px;
     width: 27px;
     height: 26px;
     
@@ -111,14 +109,7 @@
     background-repeat: no-repeat;
     opacity: 0.6;
 }
-.pet__food:disabled {
-    opacity: 1;
-    color: rgba(255, 255, 255, 0.9);
-}
-.pet__price:disabled {
-    opacity: 1;
-    color: rgba(255, 255, 255, 0.9);
-}
+
 
 .fury__important {
     margin-top: 25px; 
