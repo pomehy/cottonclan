@@ -65,11 +65,13 @@
     flex-basis: 31%;
 }
 
-.damadge__human {
+.damadge__human {    
     
-    background-color: hsla(20, 80%, 50%, 1);
-    border: 1px solid rgba(0, 0, 0, 0.6);
     color: #ffffff; 
+    background-color: rgba(230, 94, 25, 1);
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    border-radius: 5px;
+    
 }
 
 .human-icon {
@@ -80,11 +82,13 @@
 }
 
 
-.damadge__mutant {
+.damadge__mutant {    
     
-    background-color: hsla(20, 80%, 50%, 1);
-    border: 1px solid rgba(0, 0, 0, 0.6);
     color: #ffffff; 
+    background-color: rgba(230, 94, 25, 1);
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    border-radius: 5px;
+    
 }
 
 .mutant-icon {
@@ -94,12 +98,14 @@
     height: 20px;
 }
 
-.damadge__boss {
+.damadge__boss {   
+    color: #ffffff;  
+    background-color: rgba(230, 94, 25, 1);
     
-    background-color: hsla(20, 80%, 50%, 1);
-    
+       
     border: 1px solid rgba(0, 0, 0, 0.6);
-    color: #ffffff; 
+    border-radius: 5px;
+    
 }
 
 .boss-icon {
