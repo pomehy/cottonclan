@@ -7,8 +7,12 @@ let planningButton = document.querySelector('.planning__button');
 
 
 
-planningButton.onclick = function(evt) {
+planningButton.onclick = function(evt) {    
     evt.preventDefault();
+    if (planningBase.value < 10) {
+        planningBase.value = 10;
+    }
+
     let valueBase = parseInt(planningBase.value,10) + parseInt(1,10);       
     let priceBase =  Math.ceil(0.65 * (valueBase - parseInt(10,10)) ** 1.5); 
     let priceResult = 0;
@@ -16,8 +20,7 @@ planningButton.onclick = function(evt) {
         priceResult = parseInt(priceResult,10) + (Math.ceil(0.65 * (valueBase - parseInt(10,10)) ** 1.5));
         valueBase++;
     }
-    planningResult.textContent = priceResult.toLocaleString();
-   
+    planningResult.textContent = priceResult.toLocaleString();   
 };
 
  
