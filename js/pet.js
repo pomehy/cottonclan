@@ -17,9 +17,10 @@ petLevel.oninput = function() {
     if (petLevel.value < 0) {
         petLevel.value = 0;
     } 
-    // else if (petLevel.value > 35) {
-    //     petLevel.value === 35;
-    // } 
+    else if (petLevel.value > 35) {
+        petLevel.value == 35;
+        petFood.textContent = 'Максимальный уровень - 35';           
+    } 
     else if (petSelect.value == 2) {
 
         let petFoodK = parseInt(15,10) + parseInt(15,10) * 
@@ -28,6 +29,7 @@ petLevel.oninput = function() {
         let petFoodK3 = (parseInt(15,10) + parseInt(petFoodK,10)) * 
         (parseInt(petLevel.value,10) - parseInt(1,10));
 
+        
         petFood.textContent = parseInt(petFoodK3,10) / parseInt(2,10);   
         
 
@@ -50,7 +52,9 @@ petLevel.oninput = function() {
         let petFoodK3 = (parseInt(25,10) + parseInt(petFoodK,10)) * 
         (parseInt(petLevel.value,10) - parseInt(1,10));
 
-        petFood.textContent = parseInt(petFoodK3,10) / parseInt(2,10);  
+        petFood.textContent = parseInt(petFoodK3,10) / parseInt(2,10);   
+        
+        
     } else if (petSelect.value == 1) {
         if (petLevel.value == 2) {
             petFood.textContent = 5;
@@ -122,5 +126,6 @@ petLevel.oninput = function() {
             petFood.textContent = 6250;  
         }        
     }
-    petPrice.textContent = petFood.textContent * 20;
+    petPrice.textContent = petFood.textContent * 20;   
+    
 };
