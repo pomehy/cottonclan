@@ -49,7 +49,7 @@
     position: relative;
     z-index: 2; 
     display: flex;
-    min-height: 80vh;    
+    min-height: 87vh;    
 }
 
 .logo {  
@@ -79,7 +79,6 @@
 /* .logo span {
     color: #D71609;
 } */
-
 
 .main-nav {
     position: relative;
@@ -138,7 +137,7 @@
     letter-spacing: 1px;
     text-decoration: none;   
     text-transform: uppercase;    
-    text-shadow: 0px 0px 5px rgb(87, 10, 4);  
+    text-shadow: 0px 0px 10px rgb(0, 0, 0);
 
 }
 
@@ -153,6 +152,7 @@
     color: #ffffff;
     box-shadow: 0 0px 5px rgb(133, 9, 0);
 }
+
 
 .main-content {
     position: relative;
@@ -295,6 +295,18 @@
     text-shadow: 1px 1px 1px #000000;  
 }
 
+.calculate__textarea {
+    display: block;
+    width: 100%;      
+    
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 10px;
+    padding-right: 15px;  
+
+    background-color: rgba(255, 255, 255, 0.7);
+    border: 1px dashed rgba(0, 0, 0, 0.5);
+}
 
 
 .calculate__result {
@@ -364,7 +376,8 @@
     position: relative;
     display: block;
     width: 100%; 
-    margin: 15px 0;     
+    margin-top: 15px;
+    margin-bottom: 0;     
     
     padding-top: 20px;
     padding-bottom: 15px;
@@ -389,10 +402,7 @@
 
 .calculate__button:hover {
     opacity: 0.95;
-    
-    /* box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5),
-    0 0 5px rgba(0, 0, 0, 0.5);      */
-}
+}        
 
 .calculate__button::before {
     position: absolute;
@@ -408,6 +418,8 @@
 }
 
 .vk-button {
+    text-decoration: none;
+    text-align: center;
     background-color: #4c75a3;
     color: #ffffff;
 }
@@ -437,8 +449,7 @@
 .page-footer {
     position: relative;
     z-index: 1;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    
 }
 .footer-content {    
     width: 350px;
@@ -563,7 +574,9 @@
 }
 
 @media only screen and (max-width : 360px) {
-    
+    .calculate__title {
+        font-size: 20px;
+    }
     
 } 
 
