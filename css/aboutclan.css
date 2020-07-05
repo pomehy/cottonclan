@@ -1,0 +1,17 @@
+
+.calculate__image {
+    width: 100%;
+}
+
+.aboutclan-button {
+    text-decoration: none;
+    text-align: center;
+
+    background-color: #4c75a3;
+    color: #ffffff;
+}
+
+.aboutclan-button:hover {
+    background-image: linear-gradient(#4c75a3, #5c8ac0);   
+   
+}
