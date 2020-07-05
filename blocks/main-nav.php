@@ -1,22 +1,29 @@
 <nav class="main-nav">
     <ul class="main-nav__list"> 
     <li class="main-nav__item">
-            <a href="index.php" class="main-nav__link">Главная</a>
+            <a class="main-nav__link" href="index.php">Главная</a>
+        </li>     
+        <li class="main-nav__item">
+            <a class="main-nav__link main-nav__link--important" href="aboutclan.php">Клан CottonClan</a>
+        </li>
+        <li class="main-nav__item">
+            <a class="main-nav__link" href="planning.php">Стоимость характеристик</a>
+        </li> 
+        <li class="main-nav__item">
+            <a class="main-nav__link" href="health.php">Выносливость</a>
+        </li> 
+        <li class="main-nav__item">
+            <a class="main-nav__link" href="fury.php">Ярость</a>
+        </li> 
+        <li class="main-nav__item">
+            <a class="main-nav__link" href="weapon.php">Урон персонажа</a>
+        </li> 
+        <li class="main-nav__item">
+            <a class="main-nav__link" href="pet.php">Питомец</a>
+        </li>   
+        
+        <li class="main-nav__item">
+            <a class="main-nav__link" href="programs.php">Программы</a>
         </li>       
-        <li class="main-nav__item">
-            <a href="health.php" class="main-nav__link">Выносливость</a>
-        </li>
-        <li class="main-nav__item">
-            <a href="fury.php" class="main-nav__link">Ярость</a>
-        </li>
-        <li class="main-nav__item">
-            <a href="weapon.php" class="main-nav__link">Владение оружием</a>
-        </li>        
-        <li class="main-nav__item">
-            <a href="planning.php" class="main-nav__link">Стоимость характеристик</a>
-        </li>
-        <li class="main-nav__item">
-            <a href="pet.php" class="main-nav__link">Питомец</a>
-        </li>        
     </ul>
 </nav>
